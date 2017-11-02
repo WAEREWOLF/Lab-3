@@ -1,0 +1,24 @@
+//recursive function of fibonacci 
+
+#include <iostream>
+
+using namespace std;
+
+static int FibonacciRecursive(int n)
+{
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+
+    return FibonacciRecursive(n - 1) + FibonacciRecursive(n - 2);
+}
+
+int main()
+{
+    int n;
+    cout<<"Input in the variable n, a value";
+    cout<<endl<<"(to obtain the n-th term in the Fibonacci sequence) n= ";
+    cin>>n;
+
+    cout<< FibonacciRecursive(n);
+    return 0;
+}

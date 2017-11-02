@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int nr;
+int main ()
+{
+   do
+     {cout<<"Please input an integer between 0 and 90: ";
+      cin>>nr;
+      cout<<endl;
+      if (nr<0 || nr>90 )
+          cout<<"error!"<<endl;
+     }
+    while(nr<0 || nr>90);
+
+     cout<<"Input succesfull!";
+
+
+
+
+
+}

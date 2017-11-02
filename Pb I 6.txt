@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int nr=0;
+int main ()
+{
+   for(int i=1; i<= 40;i+=15)    //se afiseaza 48 *
+      for(int j=1; j<=i; j++)
+
+          {
+              cout<<"* ";
+              nr++;
+          }
+cout<<nr;
+
+int i=1;
+int nr=0;
+while (i<40)
+{
+    cout<<"* ";
+    i++;
+    nr++;
+}
+cout<<endl<<nr; //se afiseaza 39 *
+
+
+
+do {
+
+    cout<<"* ";
+    i+=3;
+    nr++;
+}while (i!=40); //se afiseaza 13 *
+
+cout<<endl<<nr;
+
+
+
+
+
+
+}

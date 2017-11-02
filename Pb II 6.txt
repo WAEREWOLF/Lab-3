@@ -1,0 +1,22 @@
+//a)
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int sumSquares(int n);
+
+int main()
+{
+	int n;
+	printf("Please insert a number : \n");
+	scanf("%d",&n);
+	printf("The sum of squares for %d is %d: \n",n,sumSquares(n));
+}
+
+int sumSquares(int n)
+{
+	int current_sum = 0;
+	current_sum = n*n;
+	if (n != 0)
+		return (sumSquares(n-1) + current_sum);
+}
